@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- action is where it's submitted, browsers can't render post requests (need a server) -->
+    <form action="results.html" method="GET">
+      <div>
+        <labe for="name">Username</labe>  <!-- for attr associates the label with the input (can click on label)-->
+        <input type="text" name="name"/>  <!-- name is for what the key that you use to access the data from the request -->
+      </div>
+      <div>
+        <label for="password">password  <!-- can also nest input within label tag -->
+          <input type="text" name="password"/>  <!-- these parameters will be set as route params with get methods, otherwise will be in the body of a post request  -->
+        </label>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
