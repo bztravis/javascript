@@ -1,5 +1,5 @@
 // dummy function
-const save = async (userId: String, post: string) => true
+const save = async (userId: String, post: string) => true;
 
 /**************** ORIGINAL ****************/
 
@@ -39,20 +39,20 @@ async function savePost(
   post: string,
   group: string
 ): Promise<boolean> {
-  if (group === '') return false
+  if (group === '') return false;
 
-  const canSave = false
+  const canSave = false;
 
   if (post.length > 2000) {
-    canSave = true
+    canSave = true;
   }
 
   if (group === 'author' && post.length > 1000) {
-    canSave = true
+    canSave = true;
   }
 
   if (group === 'admin' && post.length > 100) {
-    canSave = true
+    canSave = true;
   }
 
   // if (canSave) return await save(userId, post)
@@ -60,7 +60,12 @@ async function savePost(
 
   // still not that clear, happy path should have no conditions on final return
 
-  if (!canSave) return false
+  if (!canSave) return false;
 
-  return await save(userId, post)
+  return await save(userId, post);
+}
+
+// bouncer pattern
+function bouncer(post) {
+  // check things, if you're throwing errors. don't need to use external function like this if you're using return early
 }
