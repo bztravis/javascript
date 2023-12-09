@@ -27,6 +27,12 @@ const foundItem = items.find((item) => {
 });
 console.log(foundItem);
 
+// FINDINDEX
+const foundIndex = items.findIndex((item) => {
+  return item.name === "B";
+});
+console.log(foundIndex);
+
 // FOREACH: does not return anything
 items.forEach((item) => {
   console.log(item.name);
