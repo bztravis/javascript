@@ -113,3 +113,11 @@ const objsSlice2 = objs2.toSpliced(0, 0);
 objs2[0] = { a: 0, b: 1 };
 objs2[1].c = "three";
 console.log(objsSlice2);
+
+// FLAT: concatenates subarray contents, creates new array
+const depth = [
+  [1, 2],
+  [3, 4],
+];
+console.log(depth.flat());
+console.log(depth);
