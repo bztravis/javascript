@@ -64,6 +64,9 @@ const arr = [1, 2, 3, 4, 5];
 const includesTwo = arr.includes(2);
 console.log(includesTwo);
 
+// INDEXOF: find index of literal in array, optionally start searching at index
+const idx = arr.indexOf(3, 1);
+
 // copy
 const people = ["Andy", "Brian", "Cathy", "Marc"];
 const shallowPeople = people;
@@ -127,3 +130,9 @@ console.log(depth);
 // FROM: creates an array from an iteratble object
 const message = "hello";
 console.log(Array.from(message));
+
+// PUSH: add element to end of array, returns new length
+arr.push(10);
+
+// POP: remove element of array at index
+arr.pop(1);
