@@ -21,6 +21,8 @@ const itemNames = items.map((item) => {
 });
 console.log(itemNames);
 
+// FLATMAP: apply function to every elem, flatten result, produce new array
+
 // FIND: callback returns boolean, yields first entry which passes
 const foundItem = items.find((item) => {
   return item.name === "B";
@@ -121,3 +123,7 @@ const depth = [
 ];
 console.log(depth.flat());
 console.log(depth);
+
+// FROM: creates an array from an iteratble object
+const message = "hello";
+console.log(Array.from(message));
