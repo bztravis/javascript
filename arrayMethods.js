@@ -86,7 +86,7 @@ const withObjPeople = objPeople.with(1, { name: "Kevin" });
 console.log(objPeople);
 console.log(withObjPeople);
 
-// SORT, TO SORTED: not truly deep
+// SORT, TO SORTED: not truly deep, takes optional compare callback
 const sortedPeople = objPeople.sort();
 const newSortedPeople = objPeople.toSorted();
 objPeople[1].name = "Third";
@@ -108,7 +108,7 @@ objsSlice[1].c = "three";
 console.log(objsSlice);
 
 // SPLICE: splice(start, deleteCount, item1, item2, itemN), edits in place
-// TO SPLICED: shallow copy with depth
+// TO SPLICED: shallow copy
 const objs2 = [
   { a: 1, b: 2 },
   { c: 3, d: 4 },
